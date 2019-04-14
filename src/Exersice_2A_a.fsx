@@ -1,6 +1,4 @@
 ﻿#load "../Prelude.fsx"
-open MathNet.Numerics
-open MathNet.Numerics.LinearAlgebra
 open MathNet.Spatial.Euclidean
 open MathNet.Spatial.Units
 
