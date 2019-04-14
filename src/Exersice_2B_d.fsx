@@ -12,3 +12,7 @@ let ACT = ABT * BCT
 let ABT2 = ACT * inv BCT
 
 let BCT2 = inv ABT * ACT
+
+printfn "ACT: \n%A" ACT
+printfn "ABT with 2nd Method: \n%A" ABT2
+printfn "BCT with 2nd Method: \n%A" BCT2
