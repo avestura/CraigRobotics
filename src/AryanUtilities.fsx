@@ -23,3 +23,6 @@ module Math =
     let acosd = toRad >> acos
     let atand = toRad >> atan
     let atan2d = toRad >> atan2
+
+module Matrix =
+    let col1 (m:Matrix<_>) = m.Column 1
