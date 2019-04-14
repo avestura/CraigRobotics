@@ -9,7 +9,6 @@ open MathNet.Spatial.Units
 // i) alpha = 10, beta = 20, gamma = 30
 // ii)alpha = 30, beta = 90, gamma = -55
 
-let pi = System.Math.PI
 let rotx degree = Angle.FromDegrees degree |> Matrix3D.RotationAroundXAxis
 let roty degree = Angle.FromDegrees degree |> Matrix3D.RotationAroundYAxis
 let rotz degree = Angle.FromDegrees degree |> Matrix3D.RotationAroundZAxis
