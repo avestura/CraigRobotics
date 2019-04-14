@@ -26,3 +26,4 @@ module Math =
 
 module Matrix =
     let col1 (m:Matrix<_>) = m.Column 1
+    let inv = Matrix.inverse
