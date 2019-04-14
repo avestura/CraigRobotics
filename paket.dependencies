@@ -2,3 +2,4 @@ source https://www.nuget.org/api/v2
 
 nuget MathNet.Numerics.FSharp
 nuget MathNet.Spatial 0.4.0
+nuget MathNet.Symbolics 0.20.0
