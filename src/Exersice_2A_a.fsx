@@ -18,6 +18,3 @@ let R2 = (rotz 30.) * (roty 90.) * (rotx -55.)
 
 printfn "R1: \n%A" R1
 printfn "R2: \n%A" R2
-
-
-
