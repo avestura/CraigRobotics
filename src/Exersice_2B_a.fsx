@@ -1,7 +1,6 @@
 #load "../Prelude.fsx"
 #load "AryanUtilities.fsx"
 
-open MathNet.Numerics.LinearAlgebra
 open AryanUtilities.Rotations
 open AryanUtilities.Matrix
 
