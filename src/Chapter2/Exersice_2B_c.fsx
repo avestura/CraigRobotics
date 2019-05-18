@@ -1,5 +1,4 @@
-#load "../Prelude.fsx"
-#load "AryanUtilities.fsx"
+#load "../AryanUtilities.fsx"
 
 open MathNet.Numerics
 open MathNet.Symbolics

@@ -1,5 +1,4 @@
-﻿#load "../Prelude.fsx"
-#load "AryanUtilities.fsx"
+﻿#load "../AryanUtilities.fsx"
 
 // This script converts a Z-Y-X(alpha-beta-gamma) euler set to a
 // rotation matrix
