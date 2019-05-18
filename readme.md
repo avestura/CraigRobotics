@@ -9,7 +9,7 @@ John J. Craig
 1- Download and Install [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 2- Clone this repo
-```powershell
+```
 git clone https://github.com/0xaryan/RoboticsExcersices.git
 ```
 
