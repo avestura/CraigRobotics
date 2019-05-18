@@ -8,7 +8,6 @@ open MathNet.Numerics
 open MathNet.Numerics.LinearAlgebra
 open MathNet.Symbolics
 
-
 fsi.AddPrinter(fun (matrix:Matrix<float>    ) -> matrix.ToString())
 fsi.AddPrinter(fun (matrix:Matrix<float32>  ) -> matrix.ToString())
 fsi.AddPrinter(fun (matrix:Matrix<complex>  ) -> matrix.ToString())
