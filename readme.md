@@ -8,6 +8,7 @@ John J. Craig
 ## Book Exersices Text
 - Read exersices for [Chapter 2](./src/Chapter2/Readme.md)
 - Read exersices for [Chapter 3](./src/Chapter3/Readme.md)
+- Read exersices for [Chapter 4](./src/Chapter4/Readme.md)
 
 ## Build and Run
 1- Download and Install [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0)
