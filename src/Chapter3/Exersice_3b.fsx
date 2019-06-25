@@ -1,6 +1,5 @@
 #load "../AryanUtilities.fsx"
 
-open AryanUtilities.Math
 open MathNet.Numerics.LinearAlgebra
 open MathNet.Symbolics
 open Operators
