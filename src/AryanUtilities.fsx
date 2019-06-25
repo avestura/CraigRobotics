@@ -28,28 +28,34 @@ module Matrix =
     let col1 (m:Matrix<_>) = m.Column 1
     let inv = Matrix.inverse
 
+    let xOffset dx = matrix [[1.; 0.; 0.; dx ]
+                             [0.; 1.; 0.; 0. ]
+                             [0.; 0.; 1.; 0. ]
+                             [0.; 0.; 0.; 1. ]]
+
+    let yOffset dy = matrix [[1.; 0.; 0.; 0. ]
+                             [0.; 1.; 0.; dy ]
+                             [0.; 0.; 1.; 0. ]
+                             [0.; 0.; 0.; 1. ]]
+
+    let zOffset dz = matrix [[1.; 0.; 0.; 0. ]
+                             [0.; 1.; 0.; 0. ]
+                             [0.; 0.; 1.; dz ]
+                             [0.; 0.; 0.; 1. ]]
+
 module DenavitHartenberg =
     open Math
-    
+    open Matrix
+
     let transformMat alpha a theta d =
         let alphaRotateX = matrix [[1.; 0.        ; 0.        ; 0.]
                                    [0.; cosd alpha; -sin alpha; 0.]
                                    [0.; sind alpha; cosd alpha; 0.]
                                    [0.; 0.        ; 0.        ; 1.]]
 
-        let xOffset      = matrix [[1.; 0.; 0.; a ]
-                                   [0.; 1.; 0.; 0.]
-                                   [0.; 0.; 1.; 0.]
-                                   [0.; 0.; 0.; 1.]]
-
         let thetaRotateZ = matrix [[cosd theta; -sind theta; 0.; 0.]
                                    [sind theta;  cosd theta; 0.; 0.]
                                    [0.        ;  0.        ; 1.; 0.]
-                                   [0.        ;  0.        ; 0.; 1.]]    
+                                   [0.        ;  0.        ; 0.; 1.]]                          
 
-        let zOffset      = matrix [[1.; 0.; 0.; 0.]
-                                   [0.; 1.; 0.; 0.]
-                                   [0.; 0.; 1.; d ]
-                                   [0.; 0.; 0.; 1.]]                       
-
-        alphaRotateX * xOffset * thetaRotateZ * zOffset
+        alphaRotateX * (xOffset a) * thetaRotateZ * (zOffset d)

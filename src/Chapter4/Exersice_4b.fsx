@@ -1,9 +1,9 @@
 #load "../AryanUtilities.fsx"
 
 open System
-open MathNet.Numerics
 open MathNet.Numerics.LinearAlgebra
 open Operators
+open AryanUtilities
 
 let l1, l2, l3 = 4., 3., 2.
 
@@ -30,10 +30,7 @@ let inputCases =
                 [0.;    0.;    0.; 1.     ]], "Case iiii"
     |]
 
-let transformer = matrix [[1.; 0.; 0.; l3]
-                          [0.; 1.; 0.; 0.]
-                          [0.; 0.; 1.; 0.]
-                          [0.; 0.; 0.; 1.]]
+let transformer = Matrix.xOffset l3
 
 // Solve for each case
 inputCases
