@@ -46,7 +46,7 @@ module Matrix =
 module DenavitHartenberg =
     open Math
     open Matrix
-
+    
     let transformMat alpha a theta d =
         let alphaRotateX = matrix [[1.; 0.        ; 0.        ; 0.]
                                    [0.; cosd alpha; -sin alpha; 0.]
@@ -57,5 +57,8 @@ module DenavitHartenberg =
                                    [sind theta;  cosd theta; 0.; 0.]
                                    [0.        ;  0.        ; 1.; 0.]
                                    [0.        ;  0.        ; 0.; 1.]]                          
-
+    
+        // This is the modified-convention of D-H form
+        // For classic form use Rz-theta Tz-d Tx-a Rx-alpha
+        // More info here: http://jntuhceh.org/web/tutorials/faculty/873_ic29-2014.pdf
         alphaRotateX * (xOffset a) * thetaRotateZ * (zOffset d)
