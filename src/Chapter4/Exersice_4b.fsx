@@ -55,7 +55,7 @@ inputCases
         printfn "Solutions:"
         printfn "theta1: %A" theta1
         printfn "theta2: %A" theta2
-        printfn "theta3: %A" theta1
+        printfn "theta3: %A" theta3
         
     else
         printfn "There is no solution. Calculated value is outside of the bounds of workspace."
