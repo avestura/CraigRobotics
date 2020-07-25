@@ -15,7 +15,7 @@ John J. Craig
 
 2- Clone this repo
 ```
-git clone https://github.com/0xaryan/RoboticsExcersices.git
+git clone https://github.com/avestura/RoboticsExcersices.git
 ```
 
 3- Change directory to source folder
